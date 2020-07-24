@@ -39,3 +39,5 @@ var favFood = prompt ('Do you think my favorite food is Pizza?');
   } else { (favFood === 'n')
     alert ('You are right, tacos are my favorite food.');
   }
+// WELCOME //
+alert('Ok, ' +userName+ ' . Here is some more info about me.')
