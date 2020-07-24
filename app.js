@@ -17,8 +17,6 @@ var whatBranch = prompt ('I left Hamilton a month after graduation highschool an
     alert ('Thats right, I joined the Air Force right out of highschool.');
   } else { (whatBranch==='n')
     alert ('Wrong, I did join the Air Force where I was an AMMO troop.');
-  } else { ('') 
-
   } 
 // THIRD QUESTION //
 var currentJob = prompt ('Is it true that I currently work as a barista at a bakery?');
@@ -39,5 +37,5 @@ var favFood = prompt ('Do you think my favorite food is Pizza?');
   if (favMoto === 'y'){
     alert ('No, my favorite food is tacos. At least 12 tacos.');
   } else { (favFood === 'n')
-    alert ('You are right, tacos are my favorite food.')
-}
+    alert ('You are right, tacos are my favorite food.');
+  }
