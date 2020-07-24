@@ -22,3 +22,9 @@ var currentJob = prompt ('Is it true that I currently work as a barista at a bak
   } else { (currentJob==='n')
     alert ('You\'re right, my partner is though! She\'s great.');
 }
+var favMoto = prompt ('I love cheap, reliable, and ugly motorcycles, do you think I ride an XR650?');
+  if (favMoto === 'y'){
+    alert ('While I would love to have one, Hondas tend to be a little out of a bike mechanic\'s budget. ');
+  } else { (favMoto === 'n')
+    alert ('Thats right, I ride a KLR650 - the cockroach of motorcycles');
+}
