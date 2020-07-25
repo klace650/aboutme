@@ -54,6 +54,5 @@ var guessNum = (prompt('Guess an integer between 1 and 10'));
     alert('Guess a higher number');
   }
 }  
-
-// WELCOME //
 alert('Well, ' +userName+ ' the magic number was 3. Here is some more info about me.')
+
