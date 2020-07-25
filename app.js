@@ -43,13 +43,17 @@ var favFood = prompt ('Do you think my favorite food is Pizza?');
 
 var magicNum = '3'; 
 
-var guessNum = parseInt(prompt('Guess an integer between 1 and 10'));
+guessLoop: for (var i=0; i < 4; i++){
+var guessNum = (prompt('Guess an integer between 1 and 10'));
   if (guessNum === magicNum){
     alert('Nice job, the correct number was 3');
+  break guessLoop;
   } else if (guessNum > magicNum){
     alert ('Guess a lower number');
-  }  else if (guessNum < magicNum)
+  }  else if (guessNum < magicNum){
     alert('Guess a higher number');
+  }
+}  
 
 // WELCOME //
-alert('Ok, ' +userName+ ' . Here is some more info about me.')
+alert('Well, ' +userName+ ' the magic number was 3. Here is some more info about me.')
