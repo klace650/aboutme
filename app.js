@@ -62,7 +62,7 @@ var guessNum = (prompt('Guess an integer between 1 and 10'));
     alert('Guess a higher number');
   }
 } 
-// alert('Well, ' +userName+ ' the magic number was 3.')
+ alert('Well, ' +userName+ ' the magic number was 3.')
 
 // SEVENTH QUESTION //
 
