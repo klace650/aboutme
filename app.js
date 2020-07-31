@@ -2,6 +2,7 @@
 
 var finalScore = 0
 // INTRO  //
+
 var userName = prompt('Hello, I\'m Klace, whats your name?'); {
   alert('Hi ' + userName + ', answer the following questions with a "y" or "n" response and learn more about me...sound good?');
   console.log('User name: ' + userName);
@@ -18,9 +19,7 @@ function sea() {
     finalScore++
   }
 }
-
 sea();
-
 
 // SECOND QUESTION //
 function branch() {
@@ -56,7 +55,7 @@ job();
 
 function moto() {
   var favMoto = prompt('I love cheap, reliable, and ugly motorcycles, do you think I ride an XR650?');
-  if (favMoto === 'y' || favFood === 'Y') {
+  if (favMoto === 'y' || favMoto === 'Y') {
     alert('While I would love to have one, Hondas tend to be a little out of a bike mechanic\'s budget. ');
   } else {
     (favMoto === 'n' || favMoto === 'N')
@@ -116,6 +115,7 @@ function zip() {
       alert('98115 is correct!');
     else {
       alert('Nope, try again.')
+      finalScore++
     }
   }
 }
