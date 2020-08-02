@@ -1,19 +1,15 @@
-*a {
-  background-color: #FFFCF9;font-family: Arial, Helvetica, sans-serif;
+a {
+  background-color: #FFFCF9;
 }
 h1 {
   color: #ffd166;
   background-color: #26547c;
+  width: 960px;
 }
-#bio{
-  background-color: #06d6a0
+h2 {
+  color: #26547C;
+  background-color: #06D6A0;
 }
-#edu {
-  background-color: #06d6a0
-}
-#exp {
-  background-color: #06d6a0
-}
-#goals{
-  background-color: #06d6a0
+div {
+  width: 60%;
 }
