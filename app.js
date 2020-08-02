@@ -113,7 +113,6 @@ function zip() {
       alert('98103 is correct!');
     else if (zipGuess === myZips[2])
       alert('98115 is correct!');
-      finalScore++
     else {
       alert('Nope, try again.')
     }
