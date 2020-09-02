@@ -15,15 +15,14 @@ var wrong = 0;
 function first(){
 
     var amIFromSea = prompt('Do you reckon I was born and raised in Seattle?');
-    var lowered = amIFromSea.toLocaleLowerCase();
+    var lowered = amIFromSea.toLowerCase();
     if (lowered === 'y'|| lowered === 'yes'){
-      alert('No sorry, I was raised in Montana and moved to Seattle after getting out of the US Air Force.', ++wrong);
+      alert('No sorry, I was raised in Montana and moved to Seattle after getting out of the military', ++wrong);
     } else if (lowered === 'n'|| lowered === 'no'){
-      alert('Hey thats right! I was raised in Hamilton, Montana and moved here when I got out of the US Air Force in 2014.', ++correct);
+      alert('Hey thats right! I was raised in Hamilton, Montana and moved here when I got out of the military in 2014.', ++correct);
     } else {
       alert('If you just type yes or no it will help me stay in the scope of the class project...y or n will work too');
   }
-  console.log('Wrong: '+wrong, 'Correct: '+correct);
 }
 
 
@@ -31,32 +30,34 @@ function first(){
 
 function second(){
   first();
-  var whatBranch = prompt('');
-  if (whatBranch === 'y' || whatBranch === 'Y') {
-    alert('Thats right, I joined the Air Force right out of highschool.');
-    finalScore++
+  var whatBranch = prompt('Was I in the Air Force?');
+  var lowered = whatBranch.toLowerCase();
+  if (lowered === 'y' || lowered === 'Y') {
+    alert('Thats right, I joined the Air Force right out of highschool.', ++correct);
   } else {
-    (whatBranch === 'n' || whatBranch === 'N')
-    alert('Wrong, I did join the Air Force where I was an AMMO troop.');
+    (lowered === 'n' || lowered === 'N')
+    alert('Wrong, I was in the Air Force.', ++wrong);
   }
 }
 
-second();
+console.log('Wrong: '+wrong, 'Correct: '+correct);
 
-// // THIRD QUESTION //
+// THIRD QUESTION //
 
-// function job() {
-//   var currentJob = prompt('Is it true that I currently work as a barista at a bakery?');
-//   if (currentJob === 'y' || currentJob === 'Y') {
-//     alert('No, sorry. I\'m a bicycle mechanic!');
-//   } else {
-//     (currentJob === 'n' || currentJob === 'N')
-//     alert('You\'re right, my partner is though! She\'s great.');
-//     finalScore++
-//   }
-// }
+function job() {
+  second();
+  var currentJob = prompt('Is it true that I currently work as a barista at a bakery?');
+  if (currentJob === 'y' || currentJob === 'Y') {
+    alert('No, sorry. I\'m a bicycle mechanic!');
+  } else {
+    (currentJob === 'n' || currentJob === 'N')
+    alert('You\'re right, my partner is though! She\'s great.');
+  }
+}
 
-// job();
+job();
+
+
 
 
 // // FORTH QUESTION //
